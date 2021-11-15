@@ -1,0 +1,453 @@
+// header
+.header
+  width: 1440px
+  max-width: 100%
+  margin: 0 auto 58px
+  padding: 0 160px
+  display: flex
+  justify-content: space-between
+  align-items: center
+  box-sizing: border-box
+  ul
+    display: flex
+    justify-content: center
+    align-items: center
+    li
+      margin: 0 30px
+      position: relative
+      &:before
+        content: ''
+        position: absolute
+        width: 8px
+        height: 8px
+        background: #F1D675
+        border-radius: 50%
+        left: 50%
+        transform: translateX(-50%)
+        top: -20px
+        opacity: 0
+        transition: 0.3s
+      &:hover:before
+        opacity: 1
+      a
+        font-size: 18px
+        color: #737373
+        text-align: center
+        p
+          &:nth-of-type(1)
+            margin-bottom: 4px
+          &:nth-of-type(2)
+            font-size: 12px
+  .hintItem
+    display: flex
+    > div
+      margin: 0 9px
+      cursor: pointer
+
+// footer
+.footer
+  width: 1440px
+  max-width: 100%
+  margin: 0 auto
+  padding: 25px 200px
+  display: flex
+  justify-content: space-between
+  align-items: center
+  box-sizing: border-box
+  .followUs
+    display: flex
+    p
+      font-size: 14px
+      color: #737373
+      margin-right: 10px
+      font-weight: bold
+    .icons
+      display: flex
+      .icon
+        display: flex
+        justify-content: center
+        align-items: center
+        margin: 0 9px
+        cursor: pointer
+  > p
+      color: #737373
+      font-size: 12px
+  .lang
+    display: flex
+    > div
+      cursor: pointer
+      margin: 0 10px
+      color: rgba(#737373,0.5)
+      transition: 0.3s
+      &:hover
+        color: rgba(#737373,1)
+
+ul.sectionLits
+  li
+    color: #737373
+    font-size: 18px
+    letter-spacing: 4px
+    transition: 0.3s
+    font-weight: 400
+    padding: 16px 0
+    border-bottom: 1px solid #737373
+    position: relative
+    padding-left: 20px
+    cursor: pointer
+    &:hover
+      color: #769763
+      &:before
+        background: #F1D675
+    &:before
+      content: ''
+      width: 8px
+      height: 8px
+      border-radius: 50%
+      position: absolute
+      left: 0
+      top: 50%
+      transform: translateY(-50%)
+      background: #737373
+      transition: 0.3s
+
+.title
+  font-size: 48px
+  color: #769763
+  font-weight: bold
+.subTitle
+  font-size: 48px
+  color: #737373
+  font-weight: bold
+  margin: 16px 0
+.des
+  width: 580px
+  max-width: 100%
+  color: #737373
+  line-height: 1.8
+
+.column
+  position: relative
+  flex-direction: column
+
+.top,.bottom,.imgs,.img
+  display: flex
+.top
+  justify-content: space-between
+  margin-bottom: 24px
+.imgs
+  p
+    color: #737373
+    writing-mode: vertical-lr
+  .img
+    margin-right: 16px
+    img
+      margin-right: 4px
+.bottom
+  justify-content: space-between
+  padding-right: 40px
+
+
+
+// home
+#home
+  width: 1440px
+  max-width: 100%
+  margin: 0 auto
+
+.search
+  position: relative
+
+.searchBlock
+  width: 512px
+  max-width: 100%
+  margin: 0 auto
+  background: #fff
+  border-radius: 8px
+  display: flex
+  justify-content: space-between
+  align-items: center
+  position: absolute
+  padding: 20px 20px 20px 30px
+  top: 70%
+  left: 50%
+  transform: translateX(-50%)
+  .inputBlock
+    img
+      margin-right: 10px
+  input
+    font-size: 16px
+    color: #737373
+    border: none
+    width: 70%
+    &:focus
+      outline: none
+  .searchBtn
+    color: #769763
+    font-size: 14px
+    width: 50px
+    line-height: 26px
+    border-radius: 16px
+    border: 1px solid #769763
+    text-align: center
+
+.banner
+  margin: 0 auto
+  img
+    display: block
+    margin: 0 auto
+
+.explore
+  padding: 144px 0 144px 200px
+  .textContent
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    justify-content: center
+
+// participate
+.participate
+  display: flex
+  justify-content: space-between
+  background: #FAFAFA
+  padding: 144px 0
+  .right
+    display: flex
+    flex-direction: column
+  .sectionLits
+    width: 162px
+
+// enjoy
+.enjoy
+  padding: 144px 0
+  .bottom
+    padding-right: 0
+  .moreFood
+    font-size: 16px
+    color: #737373
+    padding: 6px 0
+    width: 170px
+    border-radius: 20px
+    border: 1px solid #737373
+    text-align: center
+    position: absolute
+    right: 20px
+    bottom: 50px
+
+// subscribe
+.subscribe
+  padding: 144px 200px
+  background: #769763
+  display: flex
+  img
+    margin-right: 40px
+  .title
+    color: #F1D675
+  .subTitle,.des
+    color:#fff
+  .des
+    margin-bottom: 26px
+  .sendEmail
+    width: 400px
+    max-width: 100%
+    box-sizing: border-box
+    display: flex
+    justify-content: space-between
+    align-items: center
+    color: rgba(#fff,0.5)
+    padding: 25px
+    border: 1px solid #fff
+    border-radius: 8px
+    img
+      margin-right: 0
+
+// sideMenu
+.sideMenu
+  width: 220px
+  max-width: 100%
+  margin-right: 44px
+
+.curPage,
+.curSearch,
+.searchRange,
+.locationRange,
+.searchContent
+  display: flex
+  justify-content: flex-start
+  align-items: flex-start
+  color: #737373
+
+.curPage
+  margin-bottom: 44px
+  font-size: 14px
+  color: #737373
+.curSearch
+  font-size: 18px
+  font-weight: bold
+  flex-direction: column
+  p
+    margin-bottom: 16px
+  ul li
+    font-size: 16px
+    font-weight: normal
+    margin-bottom: 16px
+    transition: 0.3s
+    cursor: pointer
+    &.active
+      color: #769763
+.slash
+  background: rgba(#737373,0.5)
+  width: 100%
+  height: 1px
+  margin: 6px 0 24px
+.searchRange
+  margin-bottom: 27px
+  p
+    font-weight: bold
+    font-size: 18px
+    margin-right: 12px
+  .clearSearch
+    font-size: 14px
+    color: #769763
+.locationRange
+  flex-direction: column
+.filterLocation
+  width: 160px
+  max-width: 100%
+  border: 1px solid rgba(#737373,0.5)
+  padding: 6px 0
+  border-radius: 16px
+  text-align: center
+  margin: 27px 0
+  color: #737373
+.searchContent
+  flex-direction: column
+  p
+    margin-bottom: 24px
+  ul li
+    margin-bottom: 16px
+    font-size: 16px
+    line-height: 30px
+    text-align: center
+    border-radius: 16px
+    border: 1px solid rgba(#737373,0.5)
+    width: 168px
+    max-width: 100%
+    transition: 0.3s
+    cursor: pointer
+    &.active
+      background: #769763
+      color: #fff
+
+// searchPage
+.searchPage
+  display: flex
+  justify-content: center
+  align-items: flex-start
+  margin-top: 44px
+  width: 1440px
+  max-width: 100%
+  margin: 0 auto
+  .userSearch
+    display: flex
+    justify-content: space-between
+    align-items: flex-start
+    margin-bottom: 44px
+    > p
+      color: #737373
+      font-weight: bold
+      font-size: 16px
+    .searchBlock
+      position: relative
+      width: 500px
+      border: 1px solid rgba(#737373, 0.5)
+      padding: 16px 20px 16px 30px
+      transform: translateX(0)
+      margin: 0
+      left: 0
+    .sorts
+      width: 120px
+      max-width: 100%
+      padding: 6px 0
+      color: #737373
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: center
+      border: 1px solid #737373
+      text-align: center
+      border-radius: 20px
+    .slash
+      margin: 8px 0
+  .searchResource
+    width: 820px
+    max-width: 100%
+    margin: 0 auto
+    display: flex
+    flex-wrap: wrap
+    margin: 0 -14px 0 auto
+  .content
+    width: 250px
+    max-width: 100%
+    margin: 0 14px 24px 0
+    border: 1px solid rgba(#737373,0.4)
+    overflow: hidden
+    border-radius: 6px
+    > a
+        color: #737373
+        > img
+            width: 100%
+            height: 168px
+    .contentInner
+      padding: 11px 16px 13px
+      box-sizing: border-box
+  .location
+    display: flex
+    justify-content: flex-start
+    align-items: center
+    margin: 5px 0
+    transform: translateX(-4px)
+
+// detailPage
+.detailPage
+  width: 1440px
+  max-width: 100%
+  margin: 0 auto
+  .top
+    display: flex
+    margin-bottom: 48px
+    .tags
+      display: flex
+      color: #769763
+      margin-bottom: 16px
+      p
+        &:nth-of-type(1)
+          margin-right: 16px
+    .titles
+      color: #737373
+      .name
+        font-size: 28px
+        margin-bottom: 8px
+      .tel
+        margin-bottom: 8px
+    .openTimes
+      color: #737373
+    .left
+      width: 30%
+      margin-right: 55px
+    .right
+      width: 70%
+  .middle
+    background: #FAFAFA
+    padding: 44px 200px
+    .des
+      width: 100%
+  .bottom
+    padding: 42px 0
+    .other
+      p
+        color: #737373
+        &:nth-of-type(1)
+          font-size: 28px
+          margin-bottom: 16px
+        &:nth-of-type(2)
+          font-size: 12px
